@@ -22,6 +22,10 @@ $H_4$ There is no difference in the alcohol consumed based on the row sit in
 
 $H_A$ There is a difference in the alcohol consumed based on the row you sit in 
 
+# Method
+
+the response variable seat is a categorical variable, therefore we use numerical cat rmd. 
+
 ## Now with ggplot - first select the basic data
 
 ```{r}
@@ -33,12 +37,15 @@ basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 basicCN + geom_boxplot()
 ```
   
+  This box plot shows the amount of alcohol consumed by the seating position. The back seat consumes more than the front and the middle. The front and middle seats consume the same or slightly different. 
   
 ### get fancy  
 
 ```{r}
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
+
+The graph shows the amount of alcohol consumed based on where you sit. The back seat people consume more alcohol than the people who sit in the front and middle. The middle consumes more than the people who sit in the front. 
 
 ## Numerical Summarys 
 
