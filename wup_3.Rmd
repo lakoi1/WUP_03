@@ -14,8 +14,13 @@ require(tidyverse)
 require(tigerstats)
 davisdata <- read.csv(file="UCDavis.csv")
 ```
-## Our Goal is to answer this question Is there a difference between the alcohol consumed between the row
-## you choose to sit in??
+## Our Goal is to answer this question Is there a difference between the alcohol consumed between the row you choose to sit in??
+
+# introduction
+
+$H_4$ There is no difference in the alcohol consumed based on the row sit in 
+
+$H_A$ There is a difference in the alcohol consumed based on the row you sit in 
 
 ## Now with ggplot - first select the basic data
 
