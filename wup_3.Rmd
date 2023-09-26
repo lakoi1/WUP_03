@@ -49,6 +49,12 @@ The graph shows the amount of alcohol consumed based on where you sit. The back 
 
 ## Numerical Summarys 
 
+```{r}
+favstats(alcohol~Seat,data=davisdata)
+```
+
+This data shows the mean and median of alcohol consumed. It also shows how they drink by each quarter. The people in the back drink way more than the people in the front and middle seats. 
+
 ## Inferential Tests
 
 ## Conclusions
